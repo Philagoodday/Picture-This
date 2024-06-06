@@ -31,10 +31,20 @@ h4 {
 
 img {
   display: block;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  body{
+    flex-direction: row;
   }
 }
